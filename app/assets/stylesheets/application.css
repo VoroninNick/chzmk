@@ -8,6 +8,16 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
+ * #TODO: Add mobile medias
+ *
  *= require_self
- *= require_tree .
+ *= require normalize
+ *= require html5-boilplate
+ *= require @media-print
+ *= require @media960px
+ *= require @media1272px
+ *= require @media1440px
+ *= require @media1600px
+ *= require @media1920px
  */
+

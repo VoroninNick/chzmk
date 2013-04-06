@@ -1,13 +1,27 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" prefix="og: http://ogp.me/ns#"> <!--<![endif]-->
 <head>
-  <title>CHZMK</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <title><%= yield :title %></title>
+  <link rel="shortcut icon" href="<%= asset_path('icons/favicon.ico') %>">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="keywords" content="<%= yield :meta_keywords %>" />
+  <meta name="description" content="<%= yield :meta_description %>" />
+  <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <!--[if lt IE 9]>
+  <script src="ie/js/html5-responder.js"></script>
+  <![endif]-->
 </head>
-<body>
-
+<body data-env="<%= Rails.env %>" data-rails-version="<%= sha1(hide_setting(Rails.version)) %>" data-controller="<%= params[:controller] %>" data-action="<%= params[:action] %>" data-method="<%= request.method %>" data-cache="<%= request.hash %>">
+<!--[if lt IE 8]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+<![endif]-->
 <%= yield %>
 
 </body>
