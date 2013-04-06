@@ -12,4 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery-migrate-min
+//= require jquery.ui.all
+//= require fancybox
 //= require_tree .
