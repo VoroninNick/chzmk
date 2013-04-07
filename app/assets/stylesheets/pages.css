@@ -205,6 +205,10 @@ nav ul li a{
   font-size: 0.9em;
 }
 
+.proverb-wrapper{
+  background: #f7f7f7;
+}
+
 .home-gallery .home-gallery-item img{
   width: inherit;
   -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
@@ -254,7 +258,7 @@ nav ul li a{
   width: 700px;
   margin: 0 auto;
   height: 7px;
-  padding: 0.5em 0;
+  padding: 2em 0;
 }
 
 #home-gallery-controlls .separator-ctr{
