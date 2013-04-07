@@ -131,6 +131,16 @@
     width:1232px;
   }
 
+  .grid_6.article-item-home{
+    margin-bottom: 20px;
+    width: 596px !important;
+  }
+
+  .article-item-home .right-holder {
+    width: 290px !important;
+    float: left;
+  }
+
 
 
 

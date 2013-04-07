@@ -35,11 +35,11 @@ i{
   clear: both;
 }
 
-[class*="container"]{
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-transition: margin 2s, font-size 2s, color 2s;
-  -moz-transition: margin 2s, font-size 2s, color 2s;
-  -ms-transition: margin 2s, font-size 2s, color 2s;
+[class*="container"], [class*="article-item-home"]{
+  /*-webkit-transform: translate3d(0, 0, 0);*/
+  /*-webkit-transition: margin 2s, font-size 2s, color 2s;*/
+  /*-moz-transition: margin 2s, font-size 2s, color 2s;*/
+  /*-ms-transition: margin 2s, font-size 2s, color 2s;*/
 }
 
 

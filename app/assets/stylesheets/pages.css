@@ -79,6 +79,12 @@ body > #wrapper-app-container {
 .logotype{
   position: relative;
   z-index: 900;
+  overflow: hidden;
+
+}
+
+.navigation{
+
 }
 
 nav{
@@ -95,7 +101,7 @@ nav ul{
 
 nav ul li{
   float: left;
-  margin-right: 2em;
+  margin-right: 1em;
   line-height: 65px;
   font-size: 1.3em;
   font-family: 'OpenSansSemibold', sans-serif;
@@ -216,6 +222,34 @@ nav ul li a{
   width: inherit;
 }
 
+.home-gallery-arrow-left{
+  display: inline-block;
+  margin-top: 1px;
+  width: 34px;
+  height: 70px;
+  background: url("arrow-sgallery-home-sprite.png") 0 0 no-repeat;
+  vertical-align: text-top;
+  line-height: 70px;
+  position: absolute;
+  left: 20px;
+  top: 1578px;
+  cursor: pointer;
+}
+
+.home-gallery-arrow-right{
+  display: inline-block;
+  margin-top: 1px;
+  width: 30px;
+  height: 70px;
+  background: url("arrow-sgallery-home-sprite.png") -38px 0 no-repeat;
+  vertical-align: text-top;
+  line-height: 70px;
+  position: absolute;
+  right: 20px;
+  top: 1578px;
+  cursor: pointer;
+}
+
 #home-gallery-controlls{
   width: 700px;
   margin: 0 auto;
@@ -300,13 +334,14 @@ nav ul li a{
   background: #ee3343;
 }
 
-.article-item-home{
+.grid_6.article-item-home{
   margin-bottom: 35px;
+  width: 940px;
 }
 
 .article-item-home .left-holder{
-  width: 30%;
-  margin-right: 5%;
+  width: 240px;
+  margin-right: 25px;
   float: left;
 }
 
@@ -315,11 +350,11 @@ nav ul li a{
   -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
   border: solid 4px rgb(255, 255, 255);
-  max-width: 100%;
+  width: inherit;
 }
 
 .article-item-home .right-holder{
-  width: 65%;
+  width: 675px;
   float: left;
 }
 
