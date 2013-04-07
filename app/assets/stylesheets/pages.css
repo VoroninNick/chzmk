@@ -209,6 +209,12 @@ nav ul li a{
   background: #f7f7f7;
 }
 
+.grid_3.home-gallery-item{
+  height: 190px;
+  width: 250px;
+  margin: 0 0.5em 0.5em 0.5em;
+}
+
 .home-gallery .home-gallery-item img{
   width: inherit;
   -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
