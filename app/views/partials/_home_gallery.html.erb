@@ -1,0 +1,113 @@
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function() {
+
+    var $initial_sorting = $('.home-gallery');
+    $initial_sorting.isotope({
+      filter: '.center-ctr-tab',
+      animationOptions: {
+        duration: 750,
+        easing: 'linear',
+        queue: false
+      },
+      animationEngine : "jquery"
+    });
+
+    $('.fancybox-hg').fancybox({
+
+    });
+
+    $('.left-ctr').click(function(){
+
+      $initial_sorting.isotope({
+        filter: '.left-ctr-tab',
+        animationOptions: {
+          duration: 750,
+          easing: 'linear',
+          queue: false
+        },
+        animationEngine : "jquery"
+      });
+
+      $(this).addClass('active');
+      $('.right-ctr').removeClass('active');
+      $('.center-ctr').removeClass('active');
+
+      //$('.left-ctr-tab').show();
+      //$('.center-ctr-tab').hide();
+      //$('.right-ctr-tab').hide();
+    });
+
+    $('.center-ctr').click(function(){
+
+      $initial_sorting.isotope({
+        filter: '.center-ctr-tab',
+        animationOptions: {
+          duration: 750,
+          easing: 'linear',
+          queue: false
+        },
+        animationEngine : "jquery"
+      });
+
+
+      $(this).addClass('active');
+      $('.right-ctr').removeClass('active');
+      $('.left-ctr').removeClass('active');
+
+      //$('.center-ctr-tab').show();
+      //$('.left-ctr-tab').hide();
+      //$('.right-ctr-tab').hide();
+    });
+
+    $('.right-ctr').click(function(){
+
+      $initial_sorting.isotope({
+        filter: '.right-ctr-tab',
+        animationOptions: {
+          duration: 750,
+          easing: 'linear',
+          queue: false
+        },
+        animationEngine : "jquery"
+      });
+
+      $(this).addClass('active');
+      $('.left-ctr').removeClass('active');
+      $('.center-ctr').removeClass('active');
+
+      //$('.right-ctr-tab').show();
+      //$('.left-ctr-tab').hide();
+      //$('.center-ctr-tab').hide();
+    });
+  });
+</script>
+
+<div class="home-gallery-arrow-left"></div>
+<div class="home-gallery-arrow-right"></div>
+<div class="container_12 page-index home-gallery">
+    <% first_tab_hg(12).each do |ft| %>
+      <div class="grid_3 home-gallery-item left-ctr-tab">
+        <%= link_to(image_tag(ft.avatar.url(:non_retina), :alt => ft.name), ft.avatar.url, :rel => 'left-ctr-tab', :title => ft.name, :class => 'fancybox-hg') %>
+      </div>
+    <% end %>
+
+    <% second_tab_hg(12).each do |st| %>
+      <div class="grid_3 home-gallery-item center-ctr-tab">
+        <%= link_to(image_tag(st.avatar.url(:non_retina), :alt => st.name), st.avatar.url, :rel => 'right-ctr-tab', :title => st.name, :class => 'fancybox-hg') %>
+      </div>
+    <% end %>
+
+    <% third_tab_hg(12).each do |tt| %>
+      <div class="grid_3 home-gallery-item right-ctr-tab">
+        <%= link_to(image_tag(tt.avatar.url(:non_retina), :alt => tt.name), tt.avatar.url, :rel => 'right-ctr-tab', :title => tt.name, :class => 'fancybox-hg') %>
+      </div>
+    <% end %>
+</div>
+<div id="home-gallery-controlls">
+  <div class="left-ctr"></div>
+  <div class="separator-ctr">&nbsp;</div>
+  <div class="center-ctr active"></div>
+  <div class="separator-ctr">&nbsp;</div>
+  <div class="right-ctr"></div>
+</div>
