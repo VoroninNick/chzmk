@@ -1,5 +1,5 @@
 <div class="container_12">
-  <div class="grid_3 logotype">
+  <div class="logotype grid_3">
     <% if current_page?(root_path) %>
       <%= image_tag('chzmk-logo.png', :alt => '', :title => 'На головну') %>
     <% else %>
@@ -7,7 +7,7 @@
     <% end %>
   </div>
 
-  <div class="grid_9">
+  <div class="navigation grid_9 ">
     <nav>
       <ul>
         <li><%= link_to('о компании', about_path, :title => 'о компании') %></li>
