@@ -1,5 +1,5 @@
 class HomeGallery < ActiveRecord::Base
-  attr_accessible :name, :avatar
+  attr_accessible :name, :avatar, :first_tab, :second_tab, :third_tab, :delete_avatar
 
   has_attached_file :avatar
 

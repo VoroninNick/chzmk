@@ -215,6 +215,52 @@ nav ul li a{
   height: 190px;
 }
 
+.fancybox-opened .fancybox-skin{
+  padding: 0 !important;
+  background: transparent !important;
+  -webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0) !important;
+  -moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0) !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0) !important;
+}
+
+.fancybox-close{
+  right: 12px;
+}
+
+.fancybox-next span{
+  right: 42px;
+}
+
+.left-ctr-tab,
+.right-ctr-tab{
+  /*display: none;*/
+}
+
+/**** Isotope filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -ms-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s;
+}
+
+.home-gallery{
+  height: 455px !important;
+}
+
 .home-gallery .home-gallery-item img{
   margin-bottom: 35px;
   width: inherit;
