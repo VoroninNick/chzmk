@@ -17,6 +17,8 @@
 
   body {
     min-width: 636px;
+    font-size: 1.55em;
+    line-height: 1.3em;
   }
 
   /* Containers
@@ -131,6 +133,14 @@
     width:621px;
   }
 
+  .intro-section,
+  .proverb-section .grid_3,
+  .proverb-section .grid_9,
+  .home-gallery-item,
+  .copyrights{
+    width:621px !important;
+    padding: 1em 0;
+  }
 
 
 

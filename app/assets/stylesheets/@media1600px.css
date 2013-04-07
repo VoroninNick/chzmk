@@ -373,4 +373,15 @@
   .clearfix {
     zoom: 1;
   }
+
+  .proverb-section .proverb-img{
+    line-height: 150px !important;
+  }
+
+  #banner-app-description p,
+  .proverb-section p,
+  .page-index .intro-section p{
+    font-size: 1.2em;
+    line-height: 1.6em;
+  }
 }

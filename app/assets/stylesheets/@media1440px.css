@@ -373,4 +373,8 @@
   .clearfix {
     zoom: 1;
   }
+
+  .proverb-section .proverb-img{
+    line-height: 120px !important;
+  }
 }
