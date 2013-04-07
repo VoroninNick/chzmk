@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130407145222) do
+ActiveRecord::Schema.define(:version => 20130407152937) do
 
   create_table "home_galleries", :force => true do |t|
     t.string   "name"
@@ -21,6 +21,9 @@ ActiveRecord::Schema.define(:version => 20130407145222) do
     t.datetime "avatar_updated_at"
     t.datetime "created_at",          :null => false
     t.datetime "updated_at",          :null => false
+    t.boolean  "first_tab"
+    t.boolean  "second_tab"
+    t.boolean  "third_tab"
   end
 
 end

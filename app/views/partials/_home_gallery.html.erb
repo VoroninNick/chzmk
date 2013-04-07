@@ -1,0 +1,54 @@
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function() {
+    $('.fancybox-hg').fancybox({
+
+    });
+
+    $('.left-ctr').click(function(){
+
+    });
+
+    $('.center-ctr').click(function(){
+
+    });
+
+    $('.right-ctr').click(function(){
+
+    });
+  });
+</script>
+
+<div class="home-gallery-arrow-left"></div>
+<div class="home-gallery-arrow-right"></div>
+<div class="container_12 page-index home-gallery">
+  <div class="left-ctr-tab">
+    <% first_tab_hg(12).each do |ft| %>
+      <div class="grid_3 home-gallery-item">
+        <%= link_to(image_tag(ft.avatar.url(:non_retina), :alt => ft.name), ft.avatar.url, :rel => 'left-ctr-tab', :title => ft.name, :class => 'fancybox-hg') %>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="center-ctr-tab">
+    <% second_tab_hg(12).each do |st| %>
+      <div class="grid_3 home-gallery-item">
+        <%= link_to(image_tag(st.avatar.url(:non_retina), :alt => st.name), st.avatar.url, :rel => 'right-ctr-tab', :title => st.name, :class => 'fancybox-hg') %>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="right-ctr-tab">
+    <% third_tab_hg(12).each do |tt| %>
+      <div class="grid_3 home-gallery-item">
+        <%= link_to(image_tag(tt.avatar.url(:non_retina), :alt => tt.name), tt.avatar.url, :rel => 'right-ctr-tab', :title => tt.name, :class => 'fancybox-hg') %>
+      </div>
+    <% end %>
+  </div>
+</div>
+<div id="home-gallery-controlls">
+  <div class="left-ctr"></div>
+  <div class="separator-ctr">&nbsp;</div>
+  <div class="center-ctr"></div>
+  <div class="separator-ctr">&nbsp;</div>
+  <div class="right-ctr"></div>
+</div>
