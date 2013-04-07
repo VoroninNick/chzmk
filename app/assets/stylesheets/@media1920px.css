@@ -373,4 +373,11 @@
   .clearfix {
     zoom: 1;
   }
+
+  #banner-app-description p,
+  .proverb-section p,
+  .page-index .intro-section p{
+    font-size: 1.2em;
+    line-height: 1.6em;
+  }
 }

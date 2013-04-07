@@ -3,22 +3,82 @@ button,
 input,
 select,
 textarea {
-  color: #222;
+  color: #484848;
 }
 
 body {
   font-size: 1em;
   line-height: 1.4;
+  letter-spacing: 0;
+  font-weight: normal;
+  font-family: 'OpenSansLight', Helvetica, "Helvetica Neue", Arial, sans-serif;
 }
 
+h1, h2, h3, h4, h5{
+  font-family: 'OpenSansBold', sans-serif;
+  font-weight: normal;
+}
+
+i{
+  font-weight: normal;
+  font-family: 'OpenSansItalic', sans-serif;
+  font-style: normal;
+}
+
+[class*="container"]::before, [class*="container"]::after, [class*="f-height"]::before, [class*="f-height"]::after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+[class*="container"]::after, [class*="f-height"]::after {
+  clear: both;
+}
+
+[class*="container"], [class*="article-item-home"]{
+  /*-webkit-transform: translate3d(0, 0, 0);*/
+  /*-webkit-transition: margin 2s, font-size 2s, color 2s;*/
+  /*-moz-transition: margin 2s, font-size 2s, color 2s;*/
+  /*-ms-transition: margin 2s, font-size 2s, color 2s;*/
+}
+
+
 ::-moz-selection {
-  background: #b3d4fc;
+  background: #ee3343;
   text-shadow: none;
+  color: white;
 }
 
 ::selection {
-  background: #b3d4fc;
+  background: #ee3343;
   text-shadow: none;
+  color: white;
+}
+
+*, ::after, ::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-text-shadow: rgba(84,84,84,0.01) 0 0 1px;
+  -webkit-text-stroke: rgba(84,84,84,0.01) 0.1px;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-font-smoothing: antialiased;
+  -moz-text-shadow: rgba(84,84,84,0.01) 0 0 1px;
+  -moz-text-stroke: rgba(84,84,84,0.01) 0.1px;
+  -moz-text-stroke-width: 0.1px;
+  -moz-font-smoothing: antialiased;
+  -o-text-shadow: rgba(84,84,84,0.01) 0 0 1px;
+  -o-text-stroke: rgba(84,84,84,0.01) 0.1px;
+  -o-text-stroke-width: 0.1px;
+  -o-font-smoothing: antialiased;
+}
+
+.animate {
+  -webkit-transition: 0.45s ease-out all;
+  -moz-transition: 0.45s ease-out all;
+  -ms-transition: 0.45s ease-out all;
+  -o-transition: 0.45s ease-out all;
+  transition: 0.45s ease-out all;
 }
 
 hr {
@@ -32,6 +92,8 @@ hr {
 
 img {
   vertical-align: middle;
+  outline: 0;
+  border: 0;
 }
 
 fieldset {

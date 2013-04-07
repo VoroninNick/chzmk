@@ -1,0 +1,21 @@
+<div class="container_12">
+  <div class="logotype grid_3">
+    <% if current_page?(root_path) %>
+      <%= image_tag('chzmk-logo.png', :alt => '', :title => 'На головну') %>
+    <% else %>
+      <%= link_to(image_tag('chzmk-logo.png', :alt => '', :title => 'На головну'), root_path, :title => 'На головну') %>
+    <% end %>
+  </div>
+
+  <div class="navigation grid_9 ">
+    <nav>
+      <ul>
+        <li><%= link_to('о компании', about_path, :title => 'о компании') %></li>
+        <li><%= link_to('продукция', about_path, :title => 'продукция') %></li>
+        <li><%= link_to('монтаж', about_path, :title => 'монтаж') %></li>
+        <li><%= link_to('публикации', about_path, :title => 'публикации') %></li>
+        <li><%= link_to('контакты', about_path, :title => 'контакты') %></li>
+      </ul>
+    </nav>
+  </div>
+</div>

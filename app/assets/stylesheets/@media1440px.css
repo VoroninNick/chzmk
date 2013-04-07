@@ -131,6 +131,15 @@
     width:1380px;
   }
 
+  .grid_6.article-item-home{
+    margin-bottom: 30px;
+    width: 660px !important;
+  }
+
+  .article-item-home .right-holder {
+    width: 390px !important;
+    float: left;
+  }
 
 
 
@@ -372,5 +381,9 @@
 
   .clearfix {
     zoom: 1;
+  }
+
+  .proverb-section .proverb-img{
+    line-height: 120px !important;
   }
 }

@@ -13,11 +13,13 @@
  *= require_self
  *= require normalize
  *= require html5-boilplate
+ *= require @font-connection
  *= require @media-print
  *= require @media960px
  *= require @media1272px
  *= require @media1440px
  *= require @media1600px
- *= require @media1920px
+ *= require @media-iphone4
+ *= require pages
  */
 

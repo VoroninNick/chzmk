@@ -1,2 +1,147 @@
-<h1>Page#index</h1>
-<p>Find me in app/views/page/index.html.erb</p>
+<!-- Banner section -->
+<div id="banner-app-container">
+  <div id="banner-app-description">
+    <h1>Червоноградський завод металоконструкцИЙ</h1>
+    <p>Червоноградский завод металлоконструкций – уникальное сочетание более чем 40-летнего опыта работы и современных европейских технологий производства.</p>
+  </div>
+</div>
+<div id="banner-app-controller" style="text-align: center;">
+  <%= image_tag('banner-sw-example.png', :style => 'margin-top: 10px;') %>
+  <div id="banner-app-controller-bt">
+    <div class="left-ctr"></div>
+    <div class="separator-ctr">&nbsp;</div>
+    <div class="center-ctr"></div>
+    <div class="separator-ctr">&nbsp;</div>
+    <div class="right-ctr"></div>
+  </div>
+</div>
+<!-- /Banner section -->
+<!-- Intro section -->
+<div class="container_12 page-index intro-sections">
+  <div class="grid_4 intro-section">
+    <%= image_tag('intro-section-1.jpg', :alt => 'МЕТАЛЛОКОНСТРУКЦИИ') %>
+    <h2>МЕТАЛЛОКОНСТРУКЦИИ</h2>
+    <p>Мощности Червоноградского завода металлоконструкций позволяют на сегодняшний день производить до 400 тонн металлических конструкций в месяц любых типов строительных и мостовых металлоконструкций, а также производстве нестандартных конструкций, таких как силоса, бункера, воронки и т.д.</p>
+  </div>
+  <div class="grid_4 intro-section">
+    <%= image_tag('intro-section-2.jpg', :alt => 'решоточный настил') %>
+    <h2>решоточный настил</h2>
+    <p>Производство металлоконструкций ведется с соблюдением всех норм и стандартов, ответственные специалисты предприятия проходят постоянное обучение за границей, что позволяет нам производить конструкции для самых требовательных европейских Заказчиков.</p>
+  </div>
+  <div class="grid_4 intro-section">
+    <%= image_tag('intro-section-3.jpg', :alt => 'доставка и монтаж') %>
+    <h2>доставка и монтаж</h2>
+    <p>Червоноградский завод металлоконструкций предлагает качественный и быстрый монтаж металлических конструкций, сэндвич-панелей и профнастила. На нашем предприятии работает опытная и профессиональная бригада монтажников, которая в состоянии провести монтаж конструкций практически любой сложности.</p>
+  </div>
+</div>
+<!-- /Intro section -->
+
+<!-- Proverb section -->
+<div class="container_12 page-index proverb-section">
+  <div class="grid_3 proverb-img">
+    <%= image_tag('40_years.jpg', :alt => 'Больше 40 лет опыта работ') %>
+  </div>
+  <div class="grid_9">
+    <p>Мы считаем, что «качественный продукт» подразумевает не только качество изготовления продукции, но и качество обслуживания Клиента. Именно поэтому большое значение мы уделяем обучению менеджмента нашей компании для более качественного и полного обслуживания клиентов.</p>
+    <i>Клиент может быть уверен в одном – какой бы вопрос не возник, он будет решен максимально быстро и эффективно.</i>
+  </div>
+</div>
+<!-- /Proverb section -->
+
+<!-- Home gallery section -->
+<div class="home-gallery-arrow-left"></div>
+<div class="home-gallery-arrow-right"></div>
+<div class="container_12 page-index home-gallery">
+
+  <div class="grid_3 home-gallery-item">
+    <a href=""><%= image_tag('http://placeimg.com/640/480/tech/grayscale') %></a>
+  </div>
+  <div class="grid_3 home-gallery-item">
+    <%= image_tag('http://placeimg.com/640/480/nature/grayscale') %>
+  </div>
+  <div class="grid_3 home-gallery-item">
+    <%= image_tag('http://placeimg.com/640/480/animals/grayscale') %>
+  </div>
+  <div class="grid_3 home-gallery-item">
+    <%= image_tag('http://placeimg.com/640/480/tech/grayscale') %>
+  </div>
+  <div class="grid_3 home-gallery-item">
+    <%= image_tag('http://placeimg.com/640/480/people/grayscale') %>
+  </div>
+  <div class="grid_3 home-gallery-item">
+    <%= image_tag('http://placeimg.com/640/480/nature/grayscale') %>
+  </div>
+  <div class="grid_3 home-gallery-item">
+    <%= image_tag('http://placeimg.com/640/480/people/grayscale') %>
+  </div>
+  <div class="grid_3 home-gallery-item">
+    <%= image_tag('http://placeimg.com/640/480/people/grayscale') %>
+  </div>
+</div>
+<div id="home-gallery-controlls">
+  <div class="left-ctr"></div>
+  <div class="separator-ctr">&nbsp;</div>
+  <div class="center-ctr"></div>
+  <div class="separator-ctr">&nbsp;</div>
+  <div class="right-ctr"></div>
+</div>
+<!-- /Home gallery section -->
+
+<!-- Proverb section -->
+<div class="container_12 page-index proverb-section">
+  <div class="grid_9">
+    <p>Мы постоянно следим за новыми веяниями в области разработки чертежей, понимая что строительство стремительно развивается и стоять на месте означает откатываться назад. Именно поэтому мы уделяем значительное внимание обучению наших технических специалистов как в Украине так и за рубежом, их участию в семинарах и конференциях.</p>
+    <i>Работая с нами, Вы всегда можете быть уверены в том, что у Вас за плечами команда профессионалов в области инжиниринга и любые вопросы, которые могут возникнуть на каждом этапе строительства будут решены быстро и качественно.</i>
+  </div>
+  <div class="grid_3 proverb-img">
+    <%= image_tag('technics.jpg', :alt => 'Современные технологии строительства') %>
+  </div>
+</div>
+<!-- /Proverb section -->
+
+<!-- Article section -->
+
+<div class="container_12 page-index articles-section">
+  <div class="grid_12"><h2>ВАЖНЫЕ СОБЫТИЯ</h2></div>
+  <div class="grid_6 article-item-home">
+    <div class="left-holder">
+      <img src="http://placeimg.com/218/218/tech/grayscale" alt=""/>
+    </div>
+    <div class="right-holder">
+      <h2>Заголовок публикации номер один</h2>
+      <p>Мощности Червоноградского завода металлоконструкций позволяют на сегодняшний день производить до 400 тонн металлических конструкций в месяц любых типов строительных и мостовых металлоконструкций....</p>
+    </div>
+  </div><!-- article item -->
+
+  <div class="grid_6 article-item-home">
+    <div class="left-holder">
+      <img src="http://placeimg.com/218/218/people/grayscale" alt=""/>
+    </div>
+    <div class="right-holder">
+      <h2>Заголовок публикации номер один</h2>
+      <p>Мощности Червоноградского завода металлоконструкций позволяют на сегодняшний день производить до 400 тонн металлических конструкций в месяц любых типов строительных и мостовых металлоконструкций....</p>
+    </div>
+  </div><!-- article item -->
+
+  <div class="grid_6 article-item-home">
+    <div class="left-holder">
+      <img src="http://placeimg.com/218/218/nature/grayscale" alt=""/>
+    </div>
+    <div class="right-holder">
+      <h2>Заголовок публикации номер один</h2>
+      <p>Мощности Червоноградского завода металлоконструкций позволяют на сегодняшний день производить до 400 тонн металлических конструкций в месяц любых типов строительных и мостовых металлоконструкций....</p>
+    </div>
+  </div><!-- article item -->
+
+  <div class="grid_6 article-item-home">
+    <div class="left-holder">
+      <img src="http://placeimg.com/218/218/animals/grayscale" alt=""/>
+    </div>
+    <div class="right-holder">
+      <h2>Заголовок публикации номер один</h2>
+      <p>Мощности Червоноградского завода металлоконструкций позволяют на сегодняшний день производить до 400 тонн металлических конструкций в месяц любых типов строительных и мостовых металлоконструкций....</p>
+    </div>
+  </div><!-- article item -->
+</div>
+
+<!-- /Article section -->
